@@ -9,6 +9,12 @@
 		"ghcr.io/va-h/devcontainers-features/uv:1": {},
 		"ghcr.io/devcontainers-extra/features/tmux-apt-get:1": {}
 	},
+
+	// 日本時間
+	"containerEnv": {
+		"TZ": "Asia/Tokyo"
+	},
+
 	"customizations": {
 		"vscode": {
 			"extensions": [
