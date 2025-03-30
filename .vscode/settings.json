@@ -1,0 +1,19 @@
+{
+  "github.copilot.chat.localeOverride": "ja",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.formatOnPaste": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "ruff.lint.enable": true,
+  "ruff.lint.select": [
+    "ALL"
+  ],
+  "ruff.lint.ignore": [
+    "D400",
+    "D415"
+  ]
+}
