@@ -9,12 +9,10 @@
 		"ghcr.io/va-h/devcontainers-features/uv:1": {},
 		"ghcr.io/devcontainers-extra/features/tmux-apt-get:1": {}
 	},
-
 	// 日本時間
 	"containerEnv": {
 		"TZ": "Asia/Tokyo"
 	},
-
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -29,37 +27,19 @@
 				"njpwerner.autodocstring"
 			],
 			"settings": {
-				"github.copilot.chat.localeOverride": "ja",
-				"editor.formatOnSave": true,
-				"editor.codeActionsOnSave": {
-					"source.fixAll": "explicit"
-				},
-				"editor.formatOnPaste": true,
-				"[python]": {
-					"editor.defaultFormatter": "charliermarsh.ruff"
-				},
-				"ruff.lint.enable": true,
-				"ruff.lint.select": ["ALL"],
-				"ruff.lint.ignore": ["D400","D415"],
-				// dotfiles
 				"dotfiles.repository": "vinerus-suger/dotfiles",
 				"dotfiles.installCommand": "./install.sh"
 			}
 		}
 	},
-
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh"
-
 	// Configure tool-specific properties.
 	// "customizations": {},
-
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
